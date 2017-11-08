@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Twitter</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Encabezado-->
+  <header>
+    <div class="container">
+      <h1>Twitter</h1>
+    </div>
+  </header>
+
+  <!-- Sección textarea, contador de caracteres botón y contenedor mensajes -->
+  <section class="center">
+    <div class="container">
+      <div class="up-box">
+        <h2>Reto de Código</h2><br>
+        <p class="paragraphOne">Hola, <br>Soy Front-End Developer Jr.</p><br>
+        <p class="paragraphOne" id="one">Código</p>
+      </div>
+      <textarea class="txt" id="comment" placeholder="¿Qué estas pensando?"></textarea>
+      <div class="characterCount" id="wordCount">Characters left: 140</div>
+      <button type="button" id="btn" onclick="add()"><i class="fa fa-plus" aria-hidden="true"></i> Tweet</button>
+
+      <!-- contenedor comentarios -->
+      <div id="cont"></div>
+    </div>
+  </section>
+
+  <!-- Script Files -->
+  <script src="https://use.fontawesome.com/7873633050.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
+</html>
