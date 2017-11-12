@@ -1,5 +1,7 @@
-function add(){
-	//tenemos que tomar el texto ingresado en el text area
+//Funcion agregando comentarios.
+
+function add() {
+  //tenemos que tomar el texto ingresado en el text area
   var comments = document.getElementById('comment').value;
 
   //Limpiar el text area
@@ -12,14 +14,10 @@ function add(){
   var newComments = document.createElement('div');
 
   //Validar que text area tenga un mensaje
-  if(comments.length == 0 || comments == null){
+  if (comments.length == 0 || comments == null) {
     alert('Debes ingresar un mensaje');
     return false;
-	}
-
-  //crear checkbox
-  var chck = document.createElement('input');
-  chck.type = 'checkbox';
+  }
 
   //creando icono de corazon
   var heart = document.createElement('i');
@@ -35,43 +33,62 @@ function add(){
   //se crea elemento p y se asignan iconos y texto de los comentarios
   var contenedorElemento = document.createElement('p');
   contenedorElemento.appendChild(textNewComment);
-  newComments.appendChild(chck);
   newComments.appendChild(trash);
   newComments.appendChild(heart);
   newComments.appendChild(contenedorElemento);
   cont.appendChild(newComments);
 
-	//remover comentario
-	trash.addEventListener('click', function(){
-		cont.removeChild(newComments); 
-	})
+  //remover comentario
+  trash.addEventListener('click', function() {
+    cont.removeChild(newComments);
+  })
 
-	//corazon rojo
-	heart.addEventListener('click', function(){
-		heart.classList.toggle('red');
-	})
+  //agegando colos al icono de corazon
+  heart.addEventListener('click', function() {
+    heart.classList.toggle('red');
+  })
 };
 
 
+//Funcion Contador de caracteres del textarea
+
+//Variable que obtiene el contenido del textarea
 var myText = document.getElementById('comment')
 
-myText.onkeyup = function () {
+//Creando funcion
+myText.onkeyup = function() { //Creando evento: El evento onkeyup ocurre cuando el usuario suelta una tecla (en el teclado).
+
+  //Imprimiendo en el div contador de caracteres el numero de caracteres actuales del texto.
   document.getElementById('wordCount').innerHTML = "Characters left: " + (140 - this.value.length);
 
-  if (myText.value.length >= 119){
-       document.getElementById('wordCount').className = 'gray';
-     }
+  //Agregando condiciones para cambio de color de la tipografria dependiendo de la cantidad de caracteres.
+  if (myText.value.length >= 119) {
+    document.getElementById('wordCount').className = 'gray';
+  }
 
-  if (myText.value.length >= 120){
-       document.getElementById('wordCount').className = 'green';
-     }
+  if (myText.value.length >= 120) {
+    document.getElementById('wordCount').className = 'green';
+  }
 
   if (myText.value.length >= 130) {
-       document.getElementById('wordCount').className = 'pink';
-     }
+    document.getElementById('wordCount').className = 'pink';
+  }
 
 };
 
+
+
+/*Funcion disabled button
+
+var txtArea = document.getElementById('comment');
+
+function disableBtn () {
+  if (txtArea.value.length >= 141){
+    document.getElementById("btn").disabled = true;
+  } else {
+    document.getElementById("btn").disabled = false;
+}
+*/
 
 /*
 En HTML.

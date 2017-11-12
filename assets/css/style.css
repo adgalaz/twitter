@@ -1,35 +1,37 @@
 /* Reseteo márgenes browser y color body */
-*{
+
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   font-family: 'Roboto', sans-serif;
 }
 
 .container {
-	width: 90%;
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 14px;
-	padding-right: 14px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 /* Estilos Header */
+
 header {
-	background-color: #006DBF;
+  background-color: #006DBF;
   color: #fff;
-	text-align: center;
+  text-align: center;
 }
 
-h1{
-    font-weight: 400;
-    font-size: 24px;
-    padding: 10px;
+h1 {
+  font-weight: 400;
+  font-size: 24px;
+  padding: 10px;
 }
 
-h2{
+h2 {
   font-size: 20px;
 }
 
@@ -37,97 +39,99 @@ h2{
   width: 100%;
   height: 55em;
   padding-top: 2em;
-	text-align: center;
+  text-align: center;
   background-image: url(../img/bici-big.jpg);
   background-size: 100%;
 }
 
-.up-box{
+.up-box {
   width: 70%;
   height: auto;
   background-color: #fff;
   color: #4E4D53;
-	font-size: 15px;
+  font-size: 15px;
   text-align: justify;
-	padding: 1em;
+  padding: 1em;
   border-radius: 1em;
-	border: none;
-	margin: 0 auto;
+  border: none;
+  margin: 0 auto;
 }
 
-p.paragraphOne{
+p.paragraphOne {
   margin: 5px auto;
 }
 
-#one{
+#one {
   color: #1DA1F2;
 }
 
-textarea{
-	width: 70%;
-	height: 4em;
-	color: #4E4D53;
-	font-size: 15px;
-	padding: 1em;
-	border-radius: 1em;
-	border: none;
-	margin: 0 auto;
+textarea {
+  width: 70%;
+  height: 4em;
+  color: #4E4D53;
+  font-size: 15px;
+  padding: 1em;
+  border-radius: 1em;
+  border: none;
+  margin: 0 auto;
 }
 
-.txt{
+.txt {
   margin-top: 2em;
 }
 
-.characterCount, .pink, .green, .gray{
+.characterCount, .pink, .green, .gray {
   width: 10%;
   height: 1em;
   background-color: #fff;
   color: #4E4D53;
-	font-size: 12px;
+  font-size: 12px;
   font-weight: bold;
-	padding: 1em;
-	border-radius: 1em;
-	border: none;
-	margin: 0 900px;
+  padding: 1em;
+  border-radius: 1em;
+  border: none;
+  margin: 0 900px;
 }
 
-.pink{
+.pink {
   color: #D5003D;
 }
 
-.green{
+.green {
   color: #009129;
 }
 
 /* Estilos botón agregar */
+
 #btn {
-	background-color: #66AEC7;
-	border: 0px;
-	cursor: pointer;
-	text-align: center;
-	margin: 0 auto;
-	width: 130px;
-	height: 30px;
-	display: block;
-	color: #FFF;
+  background-color: #66AEC7;
+  border: 0px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  width: 130px;
+  height: 30px;
+  display: block;
+  color: #FFF;
 }
 
 #btn:hover {
-	background-color: #5590A6;
+  background-color: #5590A6;
 }
 
-#btn:focus, textarea:focus{
-	outline: none;
+#btn:focus, textarea:focus {
+  outline: none;
 }
 
 /* Estilos contenedor comentarios */
+
 #cont {
-	border-radius: 0.4em;
-	width: 51em;
-	margin: 0 auto;
-	color: #4E4D53;
-	text-align: left;
-	margin-bottom: 6em;
+  border-radius: 0.4em;
+  width: 51em;
+  margin: 0 auto;
+  color: #4E4D53;
+  text-align: left;
+  margin-bottom: 6em;
 }
 
 /*#cont span {
@@ -135,20 +139,22 @@ textarea{
 }*/
 
 #cont div {
-	padding: 1em 0.5em;
-	margin-bottom: 2em;
-	outline: 0.1em solid #E5E3F2;
-	background-color: #FFF;
+  padding: 1em 0.5em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  outline: 0.1em solid #E5E3F2;
+  background-color: #FFF;
+  word-wrap: break-word;
 }
 
 .heart, .trash {
-	margin: 0 0.5em;
-	float: right;
+  margin: 0 0.5em;
+  float: right;
 }
 
 .trash:hover {
-	color: #1DA1F2;
-	cursor: pointer;
+  color: #1DA1F2;
+  cursor: pointer;
 }
 
 /*.strike-out {
@@ -157,12 +163,11 @@ textarea{
 }*/
 
 .red {
-	color: #FC1E26;
-	cursor: pointer;
+  color: #FC1E26;
+  cursor: pointer;
 }
 
 p {
-	display: inline-block;
-	margin-left: 0.5em;
+  margin-left: 0.5em;
   font-size: 15px;
 }
